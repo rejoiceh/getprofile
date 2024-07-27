@@ -2,24 +2,17 @@ import { Education } from '@/types';
 
 export const educations: Education[] = [
   {
-    degree: 'Bachelor of Science',
-    school: 'University of California',
-    startDate: 'Jan 2017',
-    endDate: 'Dec 2018',
-    description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
+    degree: "Master's - Information Science (focus in ML)",
+    school: 'Cornell University',
+    startDate: 'Jan 2023',
+    endDate: 'Dec 2023',
+    description: 'Relevant Coursework: Data Science, Machine Learning, Deep Learning, Reinforcement Learning',
   },
   {
-    degree: 'Master of Science',
-    school: 'University of California',
-    startDate: 'Jan 2019',
-    endDate: 'Dec 2021',
-    description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
-  },
-  {
-    degree: 'Doctor of Philosophy',
-    school: 'University of California',
-    startDate: 'Jan 2022',
-    endDate: 'Present',
-    description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
+    degree: 'Bachelor of Science - Information Science',
+    school: 'Cornell University',
+    startDate: 'August 2020',
+    endDate: 'May 2023',
+    description: 'Awards: Summa Cum Laude, Dean’s List, Grace Hopper Scholarship Recipient 2021 & 2022',
   },
 ];

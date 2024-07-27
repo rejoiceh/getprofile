@@ -9,13 +9,14 @@ const ContactSection = () => {
   return (
     <>
       <SectionTitle>Get In Touch</SectionTitle>
-      <div className="mt-14 grid gap-6 md:grid-cols-3">
+      <div className="mt-14 grid gap-6">
+        {/* md:grid-cols-3 */}
         <div className="relative h-48">
           <Image src="/images/map.svg" layout="fill" className="dark:invert" alt="map" />
-          <h6 className="text-2xl font-bold">Let's talk about everything!</h6>
-          <p className="mt-2">Don't like forms? Send me an email. 👋</p>
+          <h6 className="text-2xl font-bold">Interested? Let's chat!</h6>
+          <p className="mt-2">Send me an email at rhu712 (at) gmail (dot) com 👋</p>
         </div>
-        <div className="col-span-2">
+        {/* <div className="col-span-2">
           <div className="grid gap-8 md:grid-cols-2">
             <Input placeholder="Your Name" />
             <Input placeholder="Email Address" />
@@ -32,7 +33,7 @@ const ContactSection = () => {
               Send Message
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

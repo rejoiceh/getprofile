@@ -9,9 +9,12 @@ type Props = {
   title: string;
   publishedAt: string;
   href: string;
+  description: string;
+  demoUrl: string;
+  codeUrl: string;
 };
 
-const Post = ({ thumbnailUrl, title, publishedAt, href }: Props) => {
+const Post = ({ thumbnailUrl, title, publishedAt, href, description, demoUrl, codeUrl }: Props) => {
   return (
     <div className={classNames(styles['post'], 'bg-white dark:bg-gray-700')}>
       <Link href={href}>
@@ -23,9 +26,19 @@ const Post = ({ thumbnailUrl, title, publishedAt, href }: Props) => {
         <Link href={href}>
           <a className="block text-xl font-semibold hover:text-primary-500 hover:underline">{title}</a>
         </Link>
-        <time className="mt-2 inline-block text-gray-500">{publishedAt}</time>
+        <time className="mt-2 text-xs inline-block rounded-full text-white bg-primary-500 bg-origin-content px-1">{publishedAt}</time>
+        <p className="text-sm text-gray-500 dark:text-gray-200">{description}</p>
+        <div>
+          {demoUrl == "" ? <p></p> : <Link href={demoUrl}>
+            <a className="text-sm font-semibold text-gray-500 dark:text-gray-200 hover:text-primary-500 underline">Demo</a>
+          </Link>}
+          {'  '}
+          {codeUrl == "" ? <p></p> : <Link href={codeUrl}>
+            <a className="text-sm font-semibold text-gray-500 dark:text-gray-200 hover:text-primary-500 underline">Code</a>
+          </Link>}
+        </div>
       </div>
-    </div>
+    </div >
   );
 };
 

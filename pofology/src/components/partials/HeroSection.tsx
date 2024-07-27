@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FiDribbble, FiFacebook, FiGithub, FiInstagram, FiTwitter } from 'react-icons/fi';
+import { FiLinkedin, FiFileText, FiGithub } from 'react-icons/fi';
 import Button from '@/components/form/Button';
 import HeroBackground from './HeroBackground';
 import Typed from 'react-typed';
@@ -12,47 +12,43 @@ const HeroSection = () => {
       <HeroBackground />
       <div className="flex flex-col items-center">
         <div className="overflow-hidden rounded-full">
-          <Image src="/images/avatar/man.png" width={180} height={180} alt="avatar" />
+          <Image src="/images/avatar/profile.png" width={180} height={180} alt="avatar" />
+          {/* <Image src="/images/avatar/profile_pic.png" width={180} height={250} alt="avatar" /> */}
         </div>
-        <h1 className="mt-4 text-3xl font-bold ">Mostafizur Rahman</h1>
+        <h1 className="mt-4 text-6xl font-bold ">Rejoice Hu</h1>
         <div className="mt-2 flex gap-1">
           {' '}
           I'm a{' '}
           <Typed
-            strings={['Fullstack Developer', 'UI/UX Designer', 'Mobile App Developer']}
+            strings={['Machine Learning Engineer', 'Data Scientist', 'Lifelong Learner']}
             typeSpeed={60}
             backSpeed={30}
             loop
           />
         </div>
         <div className="mt-4  flex gap-5">
-          <Link href="https://www.instragram.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiInstagram size={25} />
+          <Link href="https://linkedin.com/in/rejoice-hu">
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white">
+              <FiLinkedin size={25} />
             </a>
           </Link>
-          <Link href="https://www.twitter.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiTwitter size={25} />
+
+          <Link href="https://drive.google.com/file/d/186dzx3x3P2li9JsoyU477m6kz0_Nt5XB/view?usp=sharing">
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white">
+              <FiFileText size={25} />
             </a>
           </Link>
-          <Link href="https://www.facebook.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiFacebook size={25} />
-            </a>
-          </Link>
-          <Link href="https://www.dribble.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiDribbble size={25} />
-            </a>
-          </Link>
-          <Link href="https://www.github.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
+
+          <Link href="https://github.com/rejoiceh">
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white">
               <FiGithub size={25} />
             </a>
           </Link>
         </div>
-        <Button className="mt-5 px-8">Hire Me</Button>
+        {/* <Button className="mt-5 px-8">Hire Me</Button> */}
+        <Link href="https://drive.google.com/file/d/186dzx3x3P2li9JsoyU477m6kz0_Nt5XB/view?usp=sharing">
+          <a className="btn mt-5 px-8">Hire Me</a>
+        </Link>
       </div>
 
       <div className="absolute bottom-0 flex flex-col items-center ">

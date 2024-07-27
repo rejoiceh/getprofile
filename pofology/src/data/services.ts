@@ -2,18 +2,28 @@ import { Service } from '@/types';
 
 export const services: Service[] = [
   {
-    name: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
-    image: '/images/services/web-development.png',
+    name: 'Vice President of Corporate Relations',
+    description: 'Women in Computing at Cornell (WICC)',
+    image: '/images/services/wicc.png',
   },
   {
-    name: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
-    image: '/images/services/ui-ux.png',
+    name: 'Grace Hopper Scholarship Recipient 2021 & 2022',
+    description: 'Cornell University',
+    image: '/images/services/anitab.png',
   },
   {
-    name: 'Mobile Application',
-    description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
-    image: '/images/services/mobile-app.png',
+    name: 'Graduate Teaching Research Specialist',
+    description: 'Cornell University - INFO 2950 Intro to Data Science',
+    image: '/images/services/cornell.png',
+  },
+  {
+    name: 'AI Fellow',
+    description: 'Headstarter AI',
+    image: '/images/services/headstarterai.png',
+  },
+  {
+    name: 'Member',
+    description: 'Rewriting the Code (RTC)',
+    image: '/images/services/rtc.png',
   },
 ];

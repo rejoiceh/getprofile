@@ -31,7 +31,7 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
           </div>
           <article
             className="prose mt-10 max-w-full dark:prose-invert"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: post.description }}
           ></article>
           <div className="mt-10  flex">
             <Link href="#">
@@ -55,14 +55,14 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
               </a>
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8">
+          {/* <div className="grid grid-cols-2 gap-8">
             <div className="mt-10">
               <RecentComment />
             </div>
             <div className="mt-10">
               <CommentBox />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </AppLayout>

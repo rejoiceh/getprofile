@@ -29,13 +29,14 @@ export type Work = {
   thumbnailUrl: string;
   description?: string;
   images: string[];
-  previewUrl: string;
+  demoUrl: string;
+  codeUrl: string;
   publishedAt: string;
-  featureList: string[];
-  attributes: {
-    name: string;
-    value: string | number;
-  }[];
+  // featureList: string[];
+  // attributes: {
+  //   name: string;
+  //   value: string | number;
+  // }[];
 };
 
 export type Post = {
@@ -45,7 +46,9 @@ export type Post = {
   thumbnailUrl: string;
   imageUrl: string;
   authorName: string;
-  content: string;
+  description: string;
+  demoUrl: string;
+  codeUrl: string;
 };
 
 export type Review = {

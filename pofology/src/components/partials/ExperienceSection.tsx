@@ -9,7 +9,7 @@ import SectionTitle from '@/components/shared/SectionTitle';
 const ExperienceSection = () => {
   return (
     <>
-      <SectionTitle>Experiences & Educations</SectionTitle>
+      <SectionTitle>Experience & Education</SectionTitle>
       <div className="py-15 mt-10 grid gap-8 md:grid-cols-2">
         {/* Experience */}
         <div>

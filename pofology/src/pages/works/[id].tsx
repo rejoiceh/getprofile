@@ -45,24 +45,27 @@ const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
             ))}
           </Slider>
           <div className="mt-6 flex justify-center">
-            <Link href={work.previewUrl}>
-              <a className="btn">Live Preview</a>
+            <Link href={work.demoUrl}>
+              <a className="btn mx-3">Demo</a>
+            </Link>
+            <Link href={work.codeUrl}>
+              <a className="btn mx-3">Code</a>
             </Link>
           </div>
         </div>
 
         <div className="my-10">
-          <h3 className="text-xl font-semibold">Summary</h3>
+          <h3 className="text-xl font-semibold">Description</h3>
           <p className="mt-4">{work.description}</p>
-          <h3 className="mt-10 text-xl font-semibold">Feature List</h3>
+          {/* <h3 className="mt-10 text-xl font-semibold">Feature List</h3>
           <ul className="mt-4 list-disc pl-4">
             {work.featureList.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
-          </ul>
+          </ul> */}
         </div>
 
-        <div className="my-10 rounded-lg bg-gray-50 py-3 shadow-md dark:bg-gray-700">
+        {/* <div className="my-10 rounded-lg bg-gray-50 py-3 shadow-md dark:bg-gray-700">
           <table className="w-full">
             <tbody>
               {work.attributes.map((attribute, index) => (
@@ -73,9 +76,9 @@ const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
 
-        <div className="mb-10 flex h-48 flex-col items-center justify-center">
+        {/* <div className="mb-10 flex h-48 flex-col items-center justify-center">
           <h2 className="text-4xl font-semibold">Want to Build a project like this?</h2>
           <p className="mt-4">I can design and develop beautiful websites, apps for you</p>
           <Link href="/contact">
@@ -83,7 +86,7 @@ const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
               Start a project
             </a>
           </Link>
-        </div>
+        </div> */}
       </div>
     </AppLayout>
   );
